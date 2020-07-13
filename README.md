@@ -8,6 +8,18 @@ The SVG Icons created by: https://github.com/refactoringui/heroicons
 
 Preview and search at Heroicons.dev (Made by @codex-zaydek)
 
+## Installing Library
+
+```
+npm i ng-heroicons
+```
+
+or
+
+```
+yarn add ng-heroicons
+```
+
 ## Using Icons
 
 Import `HeroIconsModule` from 'ng-heroicons', along with any icons you want to include.
