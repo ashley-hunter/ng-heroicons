@@ -7,8 +7,8 @@
   "repository": "https://github.com/ashley-hunter/ng-heroicons",
   "readme": "https://github.com/ashley-hunter/ng-heroicons/blob/master/README.md",
   "peerDependencies": {
-    "@angular/common": "^10.0.0",
-    "@angular/core": "^10.0.0"
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
