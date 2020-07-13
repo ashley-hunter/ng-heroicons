@@ -1,10 +1,11 @@
 {
   "name": "ng-heroicons",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "author": "Ashley Hunter",
   "description": "Angular Component for consuming Heroicons",
   "license": "MIT",
   "repository": "https://github.com/ashley-hunter/ng-heroicons",
+  "readme": "https://github.com/ashley-hunter/ng-heroicons/blob/master/README.md",
   "peerDependencies": {
     "@angular/common": "^10.0.3",
     "@angular/core": "^10.0.3"
