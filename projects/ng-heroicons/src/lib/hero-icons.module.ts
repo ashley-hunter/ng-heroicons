@@ -12,6 +12,7 @@ import { ICON_SET_TOKEN } from './tokens/icon-set.token';
 })
 export class HeroIconsModule {
 
+  // tslint:disable-next-line:no-any
   constructor(@Inject(ICON_SET_TOKEN) @Optional() icons: any) {
     // if there are no icons defined then the user has likely forgotten to use the
     // `withIcons` static function when importing
