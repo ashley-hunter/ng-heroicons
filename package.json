@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "generate-icons": "ts-node ./scripts/svg-to-icon.ts"
+    "generate-icons": "ts-node ./scripts/svg-to-icon.ts",
+    "build:ci": "npm run generate-icons && npm run lint && npm run test && ng build --prod"
   },
   "private": true,
   "dependencies": {

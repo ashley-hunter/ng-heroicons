@@ -16,7 +16,7 @@
     "deprecation": {
       "severity": "warning"
     },
-    "eofline": true,
+    "eofline": false,
     "import-blacklist": [
       true,
       "rxjs/Rx"
