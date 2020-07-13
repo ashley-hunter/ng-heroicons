@@ -1,5 +1,7 @@
 # Ng Heroicons
 
+![CI](https://github.com/ashley-hunter/ng-heroicons/workflows/CI/badge.svg)
+
 A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.
 
 The SVG Icons created by: https://github.com/refactoringui/heroicons
