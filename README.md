@@ -1,27 +1,52 @@
-# NgHeroicons
+# Ng Heroicons
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.
 
-## Development server
+The SVG Icons created by: https://github.com/refactoringui/heroicons
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Preview and search at Heroicons.dev (Made by @codex-zaydek)
 
-## Code scaffolding
+## Using Icons
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Import `HeroIconsModule` from 'ng-heroicons', along with any icons you want to include.
+To include icons add them to the `withIcons` function call, e.g.:
 
-## Build
+```typescript
+import { annotation, annotationSolid, HeroIconsModule } from 'ng-heroicons';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+@NgModule({
+  declarations: [
+  ],
+  imports: [
+    HeroIconsModule.withIcons({ annotation, annotationSolid })
+  ],
+})
+export class AppModule {
+}
+```
 
-## Running unit tests
+You can import different icons in each lazy loaded module to reduce the icons loaded in each bundle.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To insert an icon use the following HTML:
 
-## Running end-to-end tests
+```html
+<hero-icon name="annotation"></hero-icon>
+<hero-icon name="annotation-solid"></hero-icon>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Icon names are in kebab-case format. If an icon doesn't appear it is likely you forgot to import it.
 
-## Further help
+By default, the size of the icon uses the font size and text color. There is a `size` input which allows
+you to define any CSS value for the icon size. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Outline style
+
+24x24 icons drawn with a stroke.
+
+![](https://github.com/refactoringui/heroicons/raw/master/.github/outline-preview.svg?sanitize=true)
+
+#### Solid style
+
+Smaller 20x20 icons drawn with fills.
+
+![](https://github.com/refactoringui/heroicons/raw/master/.github/solid-preview.svg?sanitize=true)
