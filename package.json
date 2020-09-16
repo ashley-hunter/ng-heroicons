@@ -36,7 +36,7 @@
     "@types/node": "^12.12.50",
     "codelyzer": "^6.0.0",
     "fs-extra": "^9.0.1",
-    "heroicons": "^0.3.6",
+    "heroicons": "^0.4.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
