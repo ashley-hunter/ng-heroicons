@@ -1,0 +1,7 @@
+{
+  "cli": "nx",
+  "id": "svg-to-icon",
+  "type": "object",
+  "properties": {},
+  "required": []
+}
