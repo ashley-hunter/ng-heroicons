@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ng-heroicons/ng-heroicons": ["libs/ng-heroicons/src/index.ts"],
       "ng-heroicons": ["libs/ng-heroicons/src/index.ts"]
     }
   },

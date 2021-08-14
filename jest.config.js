@@ -1,3 +1,5 @@
+const { getJestProjects } = require("@nrwl/jest");
+
 module.exports = {
-  projects: ["<rootDir>/libs/ng-heroicons"],
+  projects: getJestProjects(),
 };
