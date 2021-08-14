@@ -17,13 +17,12 @@
       }
     },
     "lint": {
-      "executor": "@angular-devkit/build-angular:tslint",
+      "executor": "@nrwl/linter:eslint",
       "options": {
-        "tsConfig": [
-          "libs/ng-heroicons/tsconfig.lib.json",
-          "libs/ng-heroicons/tsconfig.spec.json"
-        ],
-        "exclude": ["**/node_modules/**", "!libs/ng-heroicons/**/*"]
+        "lintFilePatterns": [
+          "libs/ng-heroicons/src/**/*.ts",
+          "libs/ng-heroicons/src/**/*.html"
+        ]
       }
     },
     "test": {

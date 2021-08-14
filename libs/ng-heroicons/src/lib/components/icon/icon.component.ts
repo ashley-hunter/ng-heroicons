@@ -37,7 +37,7 @@ export class IconComponent implements OnChanges {
   constructor(
     private readonly elementRef: ElementRef<HTMLElement>,
     private readonly renderer: Renderer2,
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     @Inject(ICON_SET_TOKEN) iconsets: any
   ) {
     // cast the injected values

@@ -3,21 +3,18 @@ import { IconComponent } from './components/icon/icon.component';
 import { ICON_SET_TOKEN } from './tokens/icon-set.token';
 
 @NgModule({
-  declarations: [
-    IconComponent
-  ],
-  exports: [
-    IconComponent
-  ]
+  declarations: [IconComponent],
+  exports: [IconComponent],
 })
 export class HeroIconsModule {
-
-  // tslint:disable-next-line:no-any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(@Inject(ICON_SET_TOKEN) @Optional() icons: any) {
     // if there are no icons defined then the user has likely forgotten to use the
     // `withIcons` static function when importing
     if (!icons) {
-      console.warn('No icons have been included. Import NgHeroIconsModule.withIcons({ ... }) to include some icons.');
+      console.warn(
+        'No icons have been included. Import NgHeroIconsModule.withIcons({ ... }) to include some icons.'
+      );
     }
   }
 
@@ -27,12 +24,12 @@ export class HeroIconsModule {
    * tree-shakability
    * @param icons The list of icons to include
    */
-  static withIcons(icons: Record<string, string>): ModuleWithProviders<HeroIconsModule> {
+  static withIcons(
+    icons: Record<string, string>
+  ): ModuleWithProviders<HeroIconsModule> {
     return {
       ngModule: HeroIconsModule,
-      providers: [
-        { provide: ICON_SET_TOKEN, useValue: icons, multi: true }
-      ]
+      providers: [{ provide: ICON_SET_TOKEN, useValue: icons, multi: true }],
     };
   }
 }
