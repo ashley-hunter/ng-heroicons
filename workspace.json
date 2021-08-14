@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "ng-heroicons": "libs\\ng-heroicons"
+    "ng-heroicons": "libs/ng-heroicons"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular"
