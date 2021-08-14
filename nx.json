@@ -22,11 +22,7 @@
       }
     }
   },
-  "projects": {
-    "ng-heroicons": {
-      "tags": []
-    }
-  },
+  "projects": {},
   "targetDependencies": {
     "build": [
       {

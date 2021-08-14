@@ -1,0 +1,39 @@
+{
+  "projectType": "library",
+  "root": "libs/ng-heroicons",
+  "sourceRoot": "libs/ng-heroicons/src",
+  "prefix": "ng-heroicons",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "options": {
+        "tsConfig": "libs/ng-heroicons/tsconfig.lib.json",
+        "project": "libs/ng-heroicons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ng-heroicons/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": [
+          "libs/ng-heroicons/tsconfig.lib.json",
+          "libs/ng-heroicons/tsconfig.spec.json"
+        ],
+        "exclude": ["**/node_modules/**", "!libs/ng-heroicons/**/*"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ng-heroicons"],
+      "options": {
+        "jestConfig": "libs/ng-heroicons/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
