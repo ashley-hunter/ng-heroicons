@@ -21,10 +21,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Use Node.js 12.8
+    - name: Use Node.js 14.17.5
       uses: actions/setup-node@v1
       with:
-        node-version: 12.8
+        node-version: 14.17.5
     - name: Install dependencies
       run: yarn install
     - name: Lint
