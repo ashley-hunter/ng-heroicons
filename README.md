@@ -1,3 +1,7 @@
+# Deprecated
+
+This library has been deprecated in favour of https://github.com/ashley-hunter/ng-icons, the new Angular icon library that supports multiple iconsets including Heroicons.
+
 # Ng Heroicons
 
 ![CI](https://github.com/ashley-hunter/ng-heroicons/workflows/CI/badge.svg)
